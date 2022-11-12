@@ -7,7 +7,7 @@ const naviagte = useNavigate()
   const handleclick = ()=>{
     console.log('hello');
     
-    naviagte(`profile/${user.username}`)
+    naviagte(`/profile/${user.username}`)
     showSidebar()
   }
 
