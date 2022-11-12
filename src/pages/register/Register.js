@@ -39,7 +39,7 @@ export default function Register() {
         user.profilePicture = fileName;
         console.log(user);
         try {
-          await axios.post("/upload", data);
+          await axios.post(AU + "upload", data);
         } catch (err) { }
       }
       try {
