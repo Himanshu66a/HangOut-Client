@@ -26,7 +26,7 @@ const AU = process.env.REACT_APP_URI;
 
 
   useEffect(() => {
-    socket.current = io("ws://localhost:8900");
+    socket.current = io("https://good-blue-armadillo-suit.cyclic.app/");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
